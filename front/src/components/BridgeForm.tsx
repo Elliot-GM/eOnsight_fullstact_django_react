@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Modal } from 'react-bootstrap';
 import createWKB from '../tools/createWKB';
@@ -99,7 +99,7 @@ const BridgeForm = () => {
         }
     };
 
-    const handleSubmit = (e:any) => {
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setShowSaveModal(true);
     };
