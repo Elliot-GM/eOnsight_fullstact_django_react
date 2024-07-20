@@ -1,0 +1,67 @@
+# Full Stack Assessment Test
+
+## Overview
+
+This project is a simple web application designed to demonstrate your ability to work with a full-stack technology stack, including Django, ReactJS, PostgreSQL and PostGIS. The application allows users to view and analyze bridge data using interactive widgets and charts.
+
+### Project Structure
+
+- **`front/`**: Contains the frontend application.
+- **`back/`**: Contains the backend application.
+
+Each part of the project has its own README file with detailed instructions on how to set up and run that part of the application.
+
+## Getting Started
+
+To get started, you'll need to set up both the backend and frontend environments. Follow the instructions below to configure and run the application.
+
+### Backend
+
+The backend is built with Django and Django REST Framework. It provides API endpoints for managing bridge data.
+
+1. **Navigate to the Backend Directory:**
+   ```bash
+   cd back
+   ```
+
+2. **Follow the Backend Setup Instructions:**
+   - For detailed instructions on setting up and running the backend, refer to the `README.md` file in the `back/` directory.
+
+### Frontend
+
+The frontend is built with ReactJS (or VueJS) and provides a user interface for interacting with the bridge data.
+
+1. **Navigate to the Frontend Directory:**
+   ```bash
+   cd front
+   ```
+
+2. **Follow the Frontend Setup Instructions:**
+   - For detailed instructions on setting up and running the frontend, refer to the `README.md` file in the `front/` directory.
+
+## Project Details
+
+### Database Setup
+
+1. **Database Configuration:**
+   - A PostgreSQL database with the PostGIS extension is required. Follow the instructions in [`SETUP_DATABASE.md`](./full-stack-assessment-test-candidate/SETUP_DATABASE.md) to set up the database and load the data from `sample_bridges.csv`.
+
+### Backend Development
+
+- **API Endpoints:**
+  - **List all bridges:** GET request to retrieve all bridge records.
+  - **Retrieve bridge details:** GET request for a single bridge.
+  - **Add a new bridge:** POST request to add a new bridge.
+  - **Update bridge details:** PUT request to update an existing bridge.
+  - **Delete a bridge:** DELETE request to remove a bridge.
+
+### Frontend Development
+
+- **Bridge List Component:**
+  - Displays a table of bridges fetched from the backend API.
+
+- **Interactive Widgets:**
+  - Pie chart showing the status distribution of bridges.
+
+- **Form for Adding/Updating Bridges:**
+  - Allows users to add new bridges or update existing ones using the backend API.
