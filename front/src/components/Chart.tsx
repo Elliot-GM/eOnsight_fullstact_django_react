@@ -33,15 +33,15 @@ function countStatuses(bridges: Bridge[]): { status: string; number: number }[] 
 const Chart: React.FC<BridgeListProps> = ({ bridges }) => {
   const data = countStatuses(bridges);
 
-  const [options, setOptions] = useState<AgChartOptions>({
-    title: { text: "X" } as AgChartCaptionOptions,
+  const options:AgChartOptions = ({
+    title: { text: "Bridge Status Overview" } as AgChartCaptionOptions,
     data: data,
     series: [
       {
         type: "bar",
         xKey: "status",
         yKey: "number",
-        yName: "Y",
+        yName: "Number of Bridges",
       } as AgBarSeriesOptions,
     ],
     axes: [
