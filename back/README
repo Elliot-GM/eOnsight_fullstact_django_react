@@ -1,0 +1,21 @@
+# Bridge Management Project
+
+## Introduction
+This project is a Django application for managing bridge information, including their name, location, inspection date, status, and traffic load capacity.
+
+## Installation
+1. Install the dependencies:
+    pip install -r requirements.txt
+
+2. Apply the migrations:
+    python manage.py migrate
+
+3. Start the development server:
+    python manage.py runserver
+
+## Usage
+    Once the server is running, access the interface to manage bridges: `http://127.0.0.1:8000/bridges/`
+    You can interact with the Bridge API endpoints to create, read, update, and delete bridge information.
+
+## Tests
+    python manage.py test    
